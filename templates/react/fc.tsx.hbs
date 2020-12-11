@@ -1,0 +1,7 @@
+import React, { FC } from 'react'
+import classNames from 'classnames'
+{{ #if cssModuleStylesheet }}  import styles from './index.module.scss' {{ /if }}
+
+export const {{ pascalCase name }}: FC<any> = ({}) => <div className={classNames()}>lorem ipsum</div>
+
+export default {{ pascalCase name }}
